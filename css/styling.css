@@ -1,11 +1,44 @@
+html, body {
+    height: 100%;
+}
+
 #topsection {
-    background-color: #0F9E5E;
+    background-color: #2098d1;
+    height: 130px;
+}
+
+.navbar-nav {
+    background-color: transparent;
+    float: right;
+    margin: auto;
+}
+
+.hvr-underline-reveal {
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    background-color: transparent;
+    height: auto;
+    align-content: center;
+}
+
+.navbar-collapse {
+    width: 100%;
+}
+
+#titlearea {
+    background-color: #333333;
+    height: 120px;
 }
 
 #middlesection {
-    background-color: #e1e1e1;
+    background-color: #dddddd;
+    height: 70%;
 }
 
-#bottomsection {
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
     background-color: #666666;
 }
