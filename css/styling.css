@@ -1,11 +1,20 @@
+@font-face {
+    font-family: FiraCodeRetina;
+    src: url('/fonts/FiraCode-Retina.ttf');
+}
+
 html, body {
-    height: 100%;
-    font-family: 'Lato', sans-serif;
-    line-height: 1.8;
+    height: auto;
+    line-height: 1.7;
 }
 
 body {
+    font-family: "Fira Code", serif;
     margin-top: 50px;
+}
+
+body p {
+    font-family: "Fira Code", serif;
 }
 
 #topsection {
@@ -31,7 +40,6 @@ body {
 
     background-color: #2098d1;
     color: white;
-    text-weight: 700;
     text-align: center;
 
 }
@@ -57,29 +65,34 @@ body {
     float: right;
 }
 
+.nav > li > a {
+    padding: 14px 5px;
+}
+
 @media (max-width: 768px) {
 
     .navbar-nav {
         float: none !important;
         display: block;
-
+        padding-top: 17px;
     }
 
     .navbar-collapse {
-        margin-right: 0px !important;
-        margin-left: 0px !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
 
 .navbar-header {
-    margin-top: -8px;
+    margin-top: -14px;
 }
 
 .hvr-underline-reveal {
     font-size: 15px;
-    font-family: arial, sans-serif;
+    font-family: "Fira Code Retina", sans-serif;
     background-color: transparent;
     text-align: center;
+
 }
 
 .navbar-collapse {
@@ -90,18 +103,32 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #f9f9f9;
-    height: auto;
     text-align: left;
+    height: auto;
+    font-family: "Fira Code Retina", serif;
 }
 
 #middlesection .ul {
     margin-left: 10px;
 }
 
+#middlesection .progress {
+    margin: 30px;
+}
+
+#middlesection #experiencelist {
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
 #middlesection .img-thumbnail {
     float: left;
     margin-bottom: 10px;
     margin-right: 20px;
+}
+
+#middlesectiontext {
+    margin-top: -25px;
 }
 
 .footer {
@@ -120,3 +147,4 @@ body {
 #footerright {
     line-height: 2.5;
 }
+
