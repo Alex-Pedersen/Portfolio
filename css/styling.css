@@ -4,17 +4,17 @@
 }
 
 html, body {
-    height: auto;
+    height: 100%;
     line-height: 1.7;
 }
 
 body {
-    font-family: "Fira Code", serif;
+    font-family: "Fira Code Retina", serif;
     margin-top: 50px;
 }
 
 body p {
-    font-family: "Fira Code", serif;
+    font-family: "Fira Code Retina", serif;
 }
 
 #topsection {
@@ -27,21 +27,22 @@ body p {
 
 #topsection .container-fluid {
     height: auto !important;
-
 }
 
 #topsection .navbar-toggle {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 9px 7px;
 }
 
 #titlearea {
-
     background-color: #2098d1;
     color: white;
     text-align: center;
+}
 
+.navbar-header {
+    padding-left: 100px;
 }
 
 #titlearea .undertitle {
@@ -56,7 +57,19 @@ body p {
 
 #titlearea .container-fluid {
     margin-top: 63px;
+}
 
+.fa {
+    -o-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -khtml-transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+.fa:hover {
+    color: #2098d1;
 }
 
 .navbar-nav {
@@ -77,22 +90,34 @@ body p {
         padding-top: 17px;
     }
 
+    .navbar-header {
+        margin-top: 0;
+    }
+
+    .navbar-brand {
+        padding: 0 15px;
+    }
+
     .navbar-collapse {
         margin-right: 0 !important;
         margin-left: 0 !important;
     }
 }
 
+
 .navbar-header {
-    margin-top: -14px;
+    margin-top: 0;
 }
 
-.hvr-underline-reveal {
+.navbar-brand {
+    padding: 0 15px;
+}
+
+.hvr-underline-from-center {
     font-size: 15px;
     font-family: "Fira Code Retina", sans-serif;
     background-color: transparent;
     text-align: center;
-
 }
 
 .navbar-collapse {
@@ -100,11 +125,11 @@ body p {
 }
 
 #middlesection {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #f9f9f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e7e7e7;
     text-align: left;
-    height: auto;
+    min-height: 100%;
     font-family: "Fira Code Retina", serif;
 }
 
@@ -135,7 +160,7 @@ body p {
     position: relative;
     bottom: 0;
     width: 100%;
-    height: auto;
+    min-height: 60px;
     background-color: #333333;
     padding: 15px;
     color: white;
@@ -144,7 +169,57 @@ body p {
     margin-bottom: -15px;
 }
 
-#footerright {
-    line-height: 2.5;
+.centerfont {
+    text-align: center;
+}
+
+.footerspacer dd {
+    padding: 10px;
+}
+
+.iconfooter {
+    color: white;
+    font-size: 4em;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+@media (max-width: 429px) {
+    .iconfooter i {
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .iconfooter {
+        margin: 0 0 0 0;
+    }
+}
+
+.iconheader {
+    color: white;
+    font-size: 4em;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+#sociallinkslist {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+}
+
+.li {
+    display: inline-block;
+    *display: inline; /*IE7*/
+    *zoom: 1; /*IE7*/
+    background: blue;
+    color: white;
+    margin-right: 10px;
+}
+
+.ul {
+    -webkit-padding-start: 0;
 }
 
