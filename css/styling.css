@@ -4,17 +4,17 @@
 }
 
 html, body {
-    height: auto;
+    height: 100%;
     line-height: 1.7;
 }
 
 body {
-    font-family: "Fira Code", serif;
+    font-family: "Fira Code Retina", serif;
     margin-top: 50px;
 }
 
 body p {
-    font-family: "Fira Code", serif;
+    font-family: "Fira Code Retina", serif;
 }
 
 #topsection {
@@ -37,11 +37,13 @@ body p {
 }
 
 #titlearea {
-
     background-color: #2098d1;
     color: white;
     text-align: center;
+}
 
+.navbar-header {
+    margin-top: 0;
 }
 
 #titlearea .undertitle {
@@ -56,8 +58,21 @@ body p {
 
 #titlearea .container-fluid {
     margin-top: 63px;
-
 }
+
+.fa {
+    -o-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -khtml-transition: color .3s linear;
+    -webkit-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+.fa:hover {
+    color: #2098d1;
+}
+
 
 .navbar-nav {
     background-color: transparent;
@@ -77,6 +92,14 @@ body p {
         padding-top: 17px;
     }
 
+    .navbar-header {
+        margin-top: 0;
+    }
+
+    .navbar-brand {
+        padding: 0 15px;
+    }
+
     .navbar-collapse {
         margin-right: 0 !important;
         margin-left: 0 !important;
@@ -84,7 +107,11 @@ body p {
 }
 
 .navbar-header {
-    margin-top: -14px;
+    margin-top: 0;
+}
+
+.navbar-brand {
+    padding: 0 15px;
 }
 
 .hvr-underline-reveal {
@@ -144,7 +171,46 @@ body p {
     margin-bottom: -15px;
 }
 
-#footerright {
-    line-height: 2.5;
+.centerfont {
+    text-align: center;
+}
+
+.footerspacer dd {
+    padding: 10px;
+}
+
+.iconfooter {
+    color: white;
+    font-size: 4em;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.iconheader {
+    color: white;
+    font-size: 4em;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+#sociallinkslist {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+
+.li {
+    display: inline-block;
+    *display: inline; /*IE7*/
+    *zoom: 1; /*IE7*/
+    background: blue;
+    color: white;
+    margin-right: 10px;
+}
+
+.ul {
+    -webkit-padding-start: 0px;
 }
 
